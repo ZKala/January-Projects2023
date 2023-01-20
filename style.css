@@ -20,10 +20,20 @@ html{
  height: 8rem;
  background-color: rgba(0,0,0,0.9);
  position: fixed;
- top: 0;
+ top: -8rem;
  z-index: 1;
  padding: 3rem;
  transition: height 0.5s;
+ animation: navbarAnimation 1s .5s forwards;
+}
+
+@keyframes navbarAnimation{
+ 0%{
+  top: -8rem;
+ }
+ 100%{
+  top: 0;
+ }
 }
 
 .navbar.change{
@@ -102,6 +112,7 @@ html{
  width: 100%;
  height: .2rem;
  background-color: white;
+ transition: transform 0.3s;
 }
 
 .line-1{
